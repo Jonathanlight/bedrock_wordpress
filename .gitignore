@@ -1,4 +1,3 @@
-# Cache and logs (Symfony2)
 /app/cache/*
 /app/logs/*
 !app/cache/.gitkeep
@@ -13,21 +12,13 @@ Thumbs.db
 # Email spool folder
 /app/spool/*
 
-# Cache, session files and logs (Symfony3)
-/var/cache/*
-/var/logs/*
-/var/sessions/*
-!var/cache/.gitkeep
-!var/logs/.gitkeep
-!var/sessions/.gitkeep
-
 docker-compose.override.yml
 
 # Logs (Symfony4)
 /var/log/*
 !var/log/.gitkeep
 
-/app/symfony/assets/vendor/
+/app/wordpress/assets/vendor/
 
 # Parameters
 /app/config/parameters.yml
@@ -37,13 +28,11 @@ docker-compose.override.yml
 /app/bootstrap.php.cache
 /var/bootstrap.php.cache
 /bin/*
-!bin/console
-!bin/symfony_requirements
 /vendor/
 
 ###> friendsofphp/php-cs-fixer ###
-/app/symfony/.php-cs-fixer.php
-/app/symfony/.php-cs-fixer.cache
+/app/wordpress/.php-cs-fixer.php
+/app/wordpress/.php-cs-fixer.cache
 ###< friendsofphp/php-cs-fixer ###
 
 # Assets and user uploads

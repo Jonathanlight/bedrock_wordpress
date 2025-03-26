@@ -27,7 +27,7 @@ RUN apt-get update && apt-get install -y \
     gnupg2 \
     unixodbc-dev \
     freetds-dev \
-    && docker-php-ext-install intl pdo pdo_mysql
+    && docker-php-ext-install intl pdo pdo_mysql mysqli
 
 # Activer l'extension intl
 RUN docker-php-ext-enable intl

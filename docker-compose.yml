@@ -32,8 +32,8 @@ services:
       - './docker/etc/mysql/my.cnf:/etc/mysql/conf.d/my.cnf'
       - 'web_db:/var/lib/mysql:cached'
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: blog
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
     networks:
       - web
 

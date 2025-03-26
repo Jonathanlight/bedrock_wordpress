@@ -19,6 +19,9 @@
 git clone git@github.com:Jonathanlight/bedrock_wordpress.git
 $ cd bedrock_wordpress
 
+$ https://roots.io/bedrock/docs/installation/
+$ composer create-project roots/bedrock your-project-folder-name
+
 # or start docker containers
 $ make docker-run
 
